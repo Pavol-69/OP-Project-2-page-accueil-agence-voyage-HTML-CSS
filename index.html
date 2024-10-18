@@ -24,30 +24,30 @@
     <div class="main-container">
       <header>
         <img id="hd_logo" src="./images/logo/Booki.png" alt="Accueil Booki" />
-        <div id="menu_ctn">
-          <div class="btn_hd" id="heb_btn">
+        <nav id="menu_ctn">
+          <a href="#id_hebergements" class="btn_hd" id="heb_btn">
             <span class="btn_hd_txt">Hébergement</span>
-          </div>
-          <div class="btn_hd" id="act_btn">
+          </a>
+          <a href="#activites" class="btn_hd" id="act_btn">
             <span class="btn_hd_txt">Activités</span>
-          </div>
-        </div>
+          </a>
+        </nav>
       </header>
       <main>
-        <div id="info-group">
+        <section id="info-group">
           <div id="headline">
             <h2 id="hl-frt-line">
               Trouvez votre hébergement pour des vacances de rêve
             </h2>
             <span id="hl-scd-line">En centre-ville ou en pleine nature</span>
           </div>
-          <div id="search-bar">
+          <form id="search-bar">
             <div id="sb-icon">
               <i class="fa-solid fa-location-dot place-icon fa-xl"></i>
             </div>
             <input id="sb-input" placeholder="Marseille, France" />
             <div id="sb-btn"></div>
-          </div>
+          </form>
           <div id="filter-bar">
             <h4 id="fb-title">Filtres</h4>
             <div>
@@ -64,7 +64,7 @@
                   <i class="fa-solid fa-heart fa-lg"></i>
                   <span class="flt-txt">Romantique</span>
                 </div>
-                <div class="filtre flt-slt">
+                <div class="filtre">
                   <i class="fa-solid fa-fire fa-lg"></i>
                   <span class="flt-txt">Nos Pépites</span>
                 </div>
@@ -77,8 +77,8 @@
             </div>
             <span>Plus de 500 logements sont disponibles dans cette ville</span>
           </div>
-        </div>
-        <div class="hebergements-and-populaires">
+        </section>
+        <section id="id_hebergements" class="hebergements-and-populaires">
           <section class="hebergements">
             <h2 id>Hébergements à Marseille</h2>
             <div class="hebergements-cards">
@@ -397,8 +397,8 @@
               </a>
             </div>
           </section>
-        </div>
-        <div id="activites">
+        </section>
+        <section id="activites">
           <h2>Activités à Marseille</h2>
           <div id="act-cards">
             <a href="#">
@@ -438,7 +438,7 @@
               </article>
             </a>
           </div>
-        </div>
+        </section>
       </main>
       <footer>
         <section>

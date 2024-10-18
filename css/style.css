@@ -9,6 +9,10 @@
   --filter-bg-color: #deebff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fa-solid {
   color: var(--main-color);
 }
@@ -74,19 +78,15 @@ header {
   height: 33px;
   display: flex;
   cursor: pointer;
+  border-top: solid 2px rgb(0, 0, 0, 0);
 }
 
 .btn_hd_txt {
   align-self: flex-end;
 }
-
-#heb_btn {
+.btn_hd:hover {
   border-top: solid 2px var(--main-color);
   color: var(--main-color);
-}
-
-#act_btn {
-  border-top: solid 2px rgb(0, 0, 0, 0);
 }
 
 /**********---SEARCH_BAR---**********/
@@ -194,9 +194,10 @@ header {
   border-radius: 25px;
   border: solid 2px #d9d9d9;
   height: 38px;
+  transition: 0.5s;
 }
 
-.flt-slt {
+.filtre:hover {
   background-color: var(--filter-bg-color);
 }
 
@@ -518,16 +519,13 @@ footer a {
   .btn_hd {
     width: 100%;
     justify-content: center;
-  }
-
-  #heb_btn {
-    border-top: 0;
-    border-bottom: solid 2px var(--main-color);
-  }
-
-  #act_btn {
     border-top: 0;
     border-bottom: solid 2px var(--main-bg-color);
+  }
+
+  .btn_hd:hover {
+    border-bottom: solid 2px var(--main-color);
+    border-top: 0;
   }
 
   .btn_hd_txt {
