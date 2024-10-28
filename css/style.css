@@ -33,17 +33,18 @@ body {
 }
 
 h2 {
-  margin: 0px;
   font-weight: 700;
   font-size: 22px;
 }
 
 h3 {
-  margin: 0px;
   font-weight: 700;
   font-size: 18px;
 }
 
+h2,
+h3,
+h4,
 p {
   margin: 0;
 }
@@ -59,7 +60,7 @@ header {
 
 #hd_logo {
   height: 19px;
-  padding: 30px 50px 30px 50px;
+  padding: 30px 50px 30px 0px;
   margin-right: auto;
   cursor: pointer;
 }
@@ -163,7 +164,9 @@ header {
 #filter-bar {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: start;
+  align-items: center;
+  height: 50px;
   width: 100%;
   gap: 15px;
 }
@@ -176,7 +179,8 @@ header {
   align-items: center;
 }
 
-#filtres-ctn {
+.filtres-ctn,
+.filtres-big-ctn {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -295,12 +299,11 @@ a {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hebergements-cards a {
-  width: 29%;
+  width: 100%;
 }
 
 .hebergements-cards .card {
@@ -389,13 +392,13 @@ a {
 #act-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   box-sizing: border-box;
 }
 
 #act-cards a {
-  min-width: 24%;
+  width: 100%;
 }
 
 #act-cards .card {
@@ -418,6 +421,8 @@ a {
 
 #act-cards article img {
   height: 380px;
+  width: 100%;
+  overflow: hidden;
 }
 
 /**********---FOOTER---**********/
@@ -449,7 +454,8 @@ footer a {
   #filter-bar {
     flex-direction: column;
     gap: 20px;
-    align-items: left;
+    align-items: start;
+    height: 91px;
   }
 
   .hebergements-and-populaires {
@@ -508,6 +514,7 @@ footer a {
 
   #hd_logo {
     margin: auto;
+    padding: 30px 50px 30px 50px;
   }
 
   #menu_ctn {
@@ -542,6 +549,10 @@ footer a {
     align-items: center;
   }
 
+  #filter-bar {
+    height: 161px;
+  }
+
   #sb-btn:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -559,14 +570,21 @@ footer a {
 
   /**********---FILTRE---**********/
 
-  #filtres-ctn {
-    row-gap: 20px;
-    column-gap: 10px;
-    justify-content: center;
+  .filtres-big-ctn {
+    gap: 20px;
   }
 
-  #filtres-ctn > * {
-    flex-basis: 34%;
+  .filtres-ctn {
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .filtres-ctn .filtre,
+  .filtres-ctn,
+  .filtres-big-ctn {
+    width: 100%;
   }
 
   /**********---SECTION_GROUPE---**********/
@@ -580,6 +598,7 @@ footer a {
   }
 
   .hebergements-cards {
+    flex-direction: column;
     gap: 15px;
   }
 
