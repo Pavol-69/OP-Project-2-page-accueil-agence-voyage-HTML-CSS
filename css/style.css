@@ -67,10 +67,8 @@ header {
 
 #menu_ctn {
   height: 35px;
-  width: 344px;
-  padding: 0px 50px 0px 50px;
+  padding: 0px;
   display: flex;
-  justify-content: center;
   gap: 68px;
 }
 
@@ -438,7 +436,7 @@ footer section {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  min-width: 30%;
+  width: 100%;
 }
 
 footer a {
